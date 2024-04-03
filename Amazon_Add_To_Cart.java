@@ -37,7 +37,7 @@ public class Amazon_Add_To_Cart
 		File source = tss.getScreenshotAs(OutputType.FILE);
 		File destination = new File("C:\\Users\\user\\eclipse-workspace\\Selenium_JavaProject\\Screenshot\\One.png");
 		FileHandler.copy(source, destination);
-		driver.quit();
+		driver.close();
 		
 	}
 
