@@ -16,11 +16,12 @@ public class GTM_Drag_Drop
 		WebElement postman = driver.findElement(By.xpath("//img[@id='drag7']"));
 		WebElement drop_box = driver.findElement(By.xpath("//div[@id='div2']"));
 		Actions a1 = new Actions(driver);
-		a1.dragAndDrop(postman, drop_box);
-		a1.doubleClick().perform();
+		a1.dragAndDrop(postman, drop_box).perform();
+//		a1.doubleClick().perform();
 		Thread.sleep(3000);
-		a1.dragAndDrop(drop_box, postman);
-		a1.doubleClick().perform();
+	//	Actions a2 = new Actions(driver);
+		a1.dragAndDrop(drop_box, postman).perform();
+//		a2.doubleClick().perform();
 		Thread.sleep(3000);
 		driver.close();
 	}

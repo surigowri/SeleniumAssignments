@@ -33,6 +33,8 @@ public class Amazon_Add_To_Cart
 		driver.switchTo().window(childwindow);
 		WebElement addtocart = driver.findElement(By.id("add-to-cart-button"));
 		addtocart.click();
+		WebElement proceedtobuy = driver.findElement(By.name("proceedToRetailCheckout"));
+		proceedtobuy.click();
 		TakesScreenshot tss = driver;
 		File source = tss.getScreenshotAs(OutputType.FILE);
 		File destination = new File("C:\\Users\\user\\eclipse-workspace\\Selenium_JavaProject\\Screenshot\\One.png");
